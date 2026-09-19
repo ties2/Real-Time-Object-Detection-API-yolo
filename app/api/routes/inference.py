@@ -1,0 +1,13 @@
+from abc import abstractmethod
+
+
+class BaseModel(ABC):
+    @abstractmethod
+    def load(self):
+        pass
+    @abstractmethod
+    def predict(self,input_data):
+        pass
+    @abstractmethod
+    def metadata(self):
+        pass
