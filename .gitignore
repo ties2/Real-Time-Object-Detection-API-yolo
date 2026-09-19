@@ -1,0 +1,69 @@
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ========================
+# Python & Cache
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# ========================
+# Models & Weights (Managed by DVC)
+# ========================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+models/weights/
+
+# ========================
+# Data & Media (Managed by DVC)
+# ========================
+data/raw/
+data/processed/
+data/annotations/
+*.mp4
+*.avi
+*.mkv
+*.jpg
+*.jpeg
+*.png
+
+# ========================
+# MLflow & Tracking
+# ========================
+mlruns/
+mlartifacts/
+*.sqlite
+
+# ========================
+# Logs & Outputs
+# ========================
+*.log
+logs/
+outputs/
+runs/       # Default YOLO output directory
+
+# ========================
+# OS & IDEs
+# ========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
