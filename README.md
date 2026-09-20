@@ -10,28 +10,6 @@ BBAP-Sec is an extensible ML serving platform built around **FastAPI, YOLO/Ultra
 </p>
 ---
 
-## Why this project?
-
-A YOLO model alone is not a production ML system.
-
-BBAP-Sec focuses on the engineering layer around the model:
-
-```text
-Client
-  ↓
-FastAPI
-  ↓
-Inference Engine
-  ↓
-Model Registry
-  ↓
-YOLO / Ultralytics
-  ↓
-Structured Results
-```
-
-For real-time workloads:
-
 ```text
 Camera / RTSP
       ↓
@@ -45,9 +23,6 @@ WebSocket
       ↓
 Client
 ```
-
----
-
 ## Key Features
 
 * REST API for ML inference
