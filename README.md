@@ -5,10 +5,6 @@
 
 BBAP-Sec is an extensible ML serving platform built around **FastAPI, YOLO/Ultralytics, Docker, and modern MLOps practices**.
 
-The project started as a simple YOLO object-detection API and is being engineered into a reusable platform for **image inference, real-time video streams, model versioning, observability, and scalable deployment**.
-
-> **Status:** 🚧 Active development — core API foundation completed, model serving and real-time streaming are being implemented.
-
 <p align="center">
   <img width="600" alt="ML" src="https://github.com/ties2/Computervision/blob/main/streetAndpeople.jpg">
 </p>
