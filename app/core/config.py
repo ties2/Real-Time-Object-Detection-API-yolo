@@ -4,14 +4,13 @@ from pathlib import Path
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
 class Settings(BaseSettings):
     """Application configuration."""
 
-    app_name: str = "BBAP-Sec Real-Time Vision Platform"
+    app_name: str = "Real-Time Vision Platform"
     app_version: str = "0.1.0"
     environment: str = "development"
     debug: bool = True
@@ -21,10 +20,11 @@ class Settings(BaseSettings):
 
     log_level: str = "INFO"
 
-    model_registry_path: Path = Field(
-        default=PROJECT_ROOT / "models"
-    )
+    model_registry_path: Path = Field(default=PROJECT_ROOT / "models")
 
+    models_config_path: Path = Field(
+        default=PROJECT_ROOT / "configs" / "models.yaml"
+    )
     default_model: str = "yolo11"
 
     model_confidence_threshold: float = 0.5
