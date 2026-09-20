@@ -252,12 +252,3 @@ make check
 * [ ] GPU optimization
 
 ---
-
-## Engineering Goals
-
-The long-term goal is not simply to serve a YOLO model.
-
-BBAP-Sec is designed to demonstrate how to turn a computer vision model into a **maintainable, testable, observable, and deployable ML service**.
-
-**Built for real-world computer vision workloads — not just notebooks and demos.**
-
