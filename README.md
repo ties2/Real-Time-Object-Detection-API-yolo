@@ -151,7 +151,7 @@ doc/              # Architecture and API documentation
 ### 1. Clone
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ties2/Real-Time-Vision-Platform
 cd BBAP-Sec
 ```
 
