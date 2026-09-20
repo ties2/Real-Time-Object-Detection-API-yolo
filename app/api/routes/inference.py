@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-from typing import Any, Dict
+from typing import Any
+
 
 class BaseModel(ABC):
     """
@@ -48,7 +49,7 @@ class BaseModel(ABC):
         return self.postprocess(predictions)
 
     @abstractmethod
-    def metadata(self) -> Dict[str, Any]:
+    def metadata(self) -> dict[str, Any]:
         """
         Return model metadata for the API (name, version, task type, etc.).
         """
